@@ -130,16 +130,7 @@ export default function Projects() {
               ))}
             </div>
             {!project.comingSoon && (
-<<<<<<< HEAD
               <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline text-sm font-semibold">
-=======
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-orange-400 hover:underline text-sm font-semibold"
-              >
->>>>>>> 0b8d89ca0cdee7c74c0a0f7e612e15d0a0537dd6
                 View on GitHub →
               </a>
             )}

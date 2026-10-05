@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+import { Link } from "react-router-dom";
 
 const skillGroups = [
   {
@@ -70,9 +71,9 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.6 }}
             className="flex gap-4 mt-8"
           >
-            <a href="/projects" className="bg-orange-500 text-black font-semibold px-6 py-3 rounded-md hover:bg-orange-400 transition-colors">
+            <Link to="/projects" className="bg-orange-500 text-black font-semibold px-6 py-3 rounded-md hover:bg-orange-400 transition-colors">
               View Projects
-            </a>
+            </Link>
             <a href="/Marc_Humphrey_Resume_2026.pdf" target="_blank" rel="noopener noreferrer" className="border border-orange-500 text-orange-400 font-semibold px-6 py-3 rounded-md hover:bg-orange-500 hover:text-black transition-colors">
               Download Résumé
             </a>
