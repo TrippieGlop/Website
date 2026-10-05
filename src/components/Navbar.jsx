@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full bg-black/80 backdrop-blur-md text-white py-4 px-6 flex justify-between items-center z-50 border-b border-white/5">
       <NavLink to="/" onClick={() => setOpen(false)}>
-        <img src="/logonew.png" alt="Marc Humphrey logo" className="h-16 md:h-20 cursor-pointer" />
+        <img src="/logonew.png" alt="Marc Humphrey logo" width="100" height="80" decoding="async" className="h-16 md:h-20 w-auto cursor-pointer" />
       </NavLink>
 
       {/* Desktop links */}
