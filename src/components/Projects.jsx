@@ -5,61 +5,53 @@ const projects = [
     title: "CyberToolKit",
     tag: "Forensics",
     description:
-      "A portable, Windows-based digital forensics and incident-triage toolkit that runs directly from a USB drive.",
-    highlights: [
-      "Collects system, process, network, and user-account data into forensic evidence folders",
-      "Credential-risk assessment that flags risky storage locations without exposing secrets",
-      "SHA-256 evidence manifest, triage scoring, and HTML/JSON/text reporting",
-    ],
-    stack: ["Python", "Tkinter", "psutil", "PyInstaller"],
-    link: "https://github.com/TrippieGlop",
+      "A portable Windows tool that runs from a USB drive. It collects evidence from a computer and turns it into easy to read reports.",
+    stack: ["Python", "Tkinter", "PyInstaller"],
+    link: "https://github.com/TrippieGlop/CyberToolKit",
     comingSoon: false,
   },
   {
     title: "CardHub",
     tag: "Full-Stack",
     description:
-      "A real-time multiplayer casino-style gaming platform supporting Blackjack, Poker, UNO, and Baccarat.",
-    highlights: [
-      "Synchronized game state across devices with automatic seat cleanup and forfeits",
-      "Shared wager and betting systems with configurable CPU opponents",
-      "Responsive, cross-device gameplay for spectators and active players",
-    ],
+      "A real-time multiplayer card game site with Blackjack, Poker, UNO, and Baccarat. You can play with other people or against the computer.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    link: "https://github.com/TrippieGlop",
+    link: "https://github.com/TrippieGlop/casino-app",
     comingSoon: false,
   },
   {
     title: "Amazon-Style Web App",
     tag: "E-Commerce",
     description:
-      "A full-stack, Amazon-inspired shopping platform with product pages, search, and a persistent cart.",
-    highlights: [
-      "Reusable React components and REST API integration",
-      "CRUD operations backed by JSON Server",
-      "Shopping cart with quantity controls and persistent state",
-    ],
-    stack: ["React", "Vite", "JavaScript", "JSON Server"],
-    link: "https://github.com/TrippieGlop",
+      "A shopping site inspired by Amazon. It has product pages, search, and a cart that keeps your items.",
+    stack: ["React", "Vite", "JSON Server"],
+    link: "https://github.com/TrippieGlop/Amazon-Website",
+    comingSoon: false,
+  },
+  {
+    title: "AgapeTalk",
+    tag: "Website",
+    description:
+      "A one page website for a spiritual guidance service. Visitors can send an inquiry to ask for a call back.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/TrippieGlop/AgapeTalk",
     comingSoon: false,
   },
   {
     title: "Portfolio Website",
     tag: "This Site",
     description:
-      "This site — built with React, Tailwind CSS, and Framer Motion, with a particle background and animated UI.",
-    highlights: [],
+      "The site you are on now. It has a particle background and animated sections.",
     stack: ["React", "Tailwind CSS", "Framer Motion"],
-    link: "https://github.com/TrippieGlop/portfolio",
+    link: "https://github.com/TrippieGlop/Website",
     comingSoon: false,
   },
   {
     title: "Facial Recognition Identity System",
     tag: "Coming Soon",
     description:
-      "A cybersecurity-focused tool: capture a face, assign it an identity, and recognize that person again in later images or live camera input.",
-    highlights: [],
-    stack: ["Python", "OpenCV"],
+      "A security tool that learns a face, saves a name for it, and recognizes that person again later.",
+    stack: ["Planned"],
     link: "#",
     comingSoon: true,
   },
@@ -77,7 +69,7 @@ export default function Projects() {
         Projects
       </motion.h2>
       <p className="text-gray-400 text-center mt-4 max-w-xl mx-auto">
-        A mix of full-stack applications and hands-on security tooling.
+        A mix of full-stack apps, websites, and security tools.
       </p>
       <div className="grid md:grid-cols-2 gap-8 mt-14 max-w-5xl mx-auto">
         {projects.map((project, index) => (
@@ -112,13 +104,6 @@ export default function Projects() {
               </span>
             </div>
             <p className="text-gray-300 mb-4">{project.description}</p>
-            {project.highlights.length > 0 && (
-              <ul className="text-gray-400 text-sm list-disc list-inside space-y-1 mb-4">
-                {project.highlights.map((h) => (
-                  <li key={h}>{h}</li>
-                ))}
-              </ul>
-            )}
             <div className="flex flex-wrap gap-2 mb-4">
               {project.stack.map((s) => (
                 <span

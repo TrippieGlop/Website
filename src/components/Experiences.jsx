@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const experiences = [
   {
     role: "Student Technician",
-    company: "Saint Joseph's University — Office of Information Technology",
+    company: "Saint Joseph's University, Office of Information Technology",
     duration: "June 2024 - Present",
     description:
       "Provide technical support to faculty, staff, and students, troubleshooting hardware, software, and system-access issues. Train student employees on internal IT systems and document recurring issues for escalation.",

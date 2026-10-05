@@ -123,7 +123,7 @@ export default function Hero() {
               Master of Science in Cybersecurity
             </span>
             . I work as a Student Technician in SJU's Office of Information Technology, and I
-            build full-stack web applications and security tooling in my own time — from a
+            build full-stack web applications and security tooling in my own time, from a
             portable digital-forensics toolkit to a real-time multiplayer platform.
           </p>
           <p>
@@ -132,7 +132,7 @@ export default function Hero() {
             security work.
           </p>
           <p>
-            Outside of code, you'll find me at the gym or with music on — it's where I recharge
+            Outside of code, you'll find me at the gym or with music on. It's where I recharge
             between projects. I'm always happy to connect about cybersecurity, software, or
             opportunities to collaborate.
           </p>
